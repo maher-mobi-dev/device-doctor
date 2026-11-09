@@ -1,0 +1,16 @@
+# Build
+build/
+.gradle/
+.kotlin/
+
+# Secrets and local configuration (see CLAUDE.md rule 7)
+local.properties
+google-services.json
+*.keystore
+*.jks
+
+# IDE and OS
+.idea/
+*.iml
+.DS_Store
+captures/
