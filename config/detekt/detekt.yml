@@ -1,0 +1,5 @@
+# Only the differences from detekt's default configuration.
+naming:
+  FunctionNaming:
+    ignoreAnnotated:
+      - Composable

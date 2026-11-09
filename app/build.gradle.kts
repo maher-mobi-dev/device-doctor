@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.application)
     id("devicedoctor.android.compose")
     id("devicedoctor.koin")
+    id("devicedoctor.quality")
 }
 
 android {

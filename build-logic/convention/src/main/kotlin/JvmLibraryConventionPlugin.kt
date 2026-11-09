@@ -12,6 +12,7 @@ import org.jetbrains.kotlin.gradle.dsl.KotlinJvmProjectExtension
 class JvmLibraryConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) = with(target) {
         pluginManager.apply("org.jetbrains.kotlin.jvm")
+        pluginManager.apply("devicedoctor.quality")
 
         extensions.configure<JavaPluginExtension> {
             sourceCompatibility = JavaVersion.VERSION_17

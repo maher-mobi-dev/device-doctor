@@ -20,7 +20,9 @@ kotlin {
 dependencies {
     compileOnly(libs.android.gradlePlugin)
     compileOnly(libs.compose.gradlePlugin)
+    compileOnly(libs.detekt.gradlePlugin)
     compileOnly(libs.kotlin.gradlePlugin)
+    compileOnly(libs.ktlint.gradlePlugin)
 }
 
 gradlePlugin {
@@ -40,6 +42,10 @@ gradlePlugin {
         register("koin") {
             id = "devicedoctor.koin"
             implementationClass = "KoinConventionPlugin"
+        }
+        register("quality") {
+            id = "devicedoctor.quality"
+            implementationClass = "QualityConventionPlugin"
         }
     }
 }
