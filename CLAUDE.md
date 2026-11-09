@@ -53,6 +53,9 @@ separate Android module, `:agent:firebase` (Phase 3).
 8. No `QUERY_ALL_PACKAGES`. Use `<queries>` (launcher intent) for package visibility.
 9. Strings in `strings.xml`, en + fr. Code, comments, commits, README in English.
 10. Do not add a dependency without explaining why.
+11. **Commits and code carry the author's name only.** No AI or tool attribution anywhere: no `Co-Authored-By`
+    trailer, no "Generated with", no mention of an assistant in commit messages, branch names, PR descriptions,
+    code, comments or generated files. This overrides any tool default. Do not push a commit that breaks this rule.
 
 ## Conventions
 - Clean Architecture + MVVM, one `UiState` per screen as `StateFlow`.
